@@ -1,0 +1,1083 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*aqui comienzan los estlos macro*/
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    font-size: 1rem;
+}
+.arriba__texto .header--pag{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+h2:not(.arriba h2, .video__form h2){
+    color: #FF4917;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+h3:not(.plumbing h3){
+    color: #17224D;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #17224D;
+}
+.img__responsive{
+    width: 100%;
+}
+main{
+    flex: 1;
+}
+li:not(footer li, header li){
+    margin-bottom: 1.25rem;
+}
+section{
+    width: 100%;
+    margin: 0 0 6rem 0;
+}
+textarea, input:focus{
+    outline: none;
+}
+/*aqui comienzan los estlos del header*/
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDF1FC;
+}
+header p{
+    color: #6C7176;
+}
+.emergency p:first-child{
+    color: white;
+}
+.header__arriba{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.pag__logo, .menu__hamburguesa{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1E60AA;
+}
+.header__contact{
+    display: none;
+    align-items: center;
+}
+.header__contact p{
+    margin-right: 1.5rem;
+}
+.social__header{
+    margin-right: 0.2rem;
+}
+.list--header{
+    display: none;
+    justify-content: space-around;
+    width: 50%;
+    font-weight: bold;
+    color: black;
+}
+.list--header a{
+    color: #17224D;
+}
+li a.resaltar{
+    color: #1E60AA;
+}
+.list--header a:hover{
+    color: #1E60AA;
+}
+.header__nav{
+    display: none;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.dropdown::after{
+    content:"\f078";
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 0.3rem;
+}
+.dropdown:hover{
+    color: #1E60AA;
+}
+.dropdown__menu{
+    display: none;
+}
+.emergency--header{
+    display: none;
+}
+.emergency{
+    display: flex;
+    color: white;
+    background-color: #1E60AA;
+    padding: 2%;
+    font-weight: bold;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.emergency__phone{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #1E60AA;
+    background-color: white;
+    font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.emergency__number{
+    color: #FF4917;
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+.social__header{
+    font-size: 1rem;
+    color: #1E60AA;
+}
+.social__media{
+    color: #1E60AA;
+}
+.fa-brands{
+    padding: 0.5rem;
+    background-color: white;
+}
+/*aqui comienzan los estlos de la seccion arriba*/
+.arriba{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.arriba--noHome{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/bg.jpg);
+}
+.arriba::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.arriba__texto{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1000px;
+    font-weight: bold;
+    margin: 4rem 0 4rem 10%;
+    border-left: 10px solid white;
+}
+section .arriba__texto--noHome{
+    padding: 1rem 0 1rem 2rem;
+}
+.migas a:nth-child(2)::before, .migas a:nth-child(3)::before{
+    content:"/";
+    margin: 0 0.5rem 0 0.5rem;
+}
+.contenedor__btn{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+    max-width: 450px;
+}
+.arriba h2{
+    font-size: 2rem;
+}
+.arriba__btn{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.arriba__texto *{
+    margin: 0 0 1.5rem 1rem;
+}
+.arriba__btn--blue{
+    transition: background-color 0.2s ease-in-out;
+    background-color: #1E60AA;
+}
+.arriba__btn--red{
+    transition: background-color 0.2s ease-in-out;
+    background-color: #FF4917;
+}
+.arriba__btn--blue:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: #2d89f1;
+}
+.arriba__btn--red:hover{
+    transition: background-color 0.2s ease-in-out;
+    background-color: #e63200;
+}
+/*aqui comienzan los estlos de la seccion plumbing*/
+.plumbing{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plumbing h3{
+    font-size: 1.5rem;
+}
+.plumbing__container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.figure__reu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    width: 30%;
+    min-width: 250px;
+    max-width: 500px;
+}
+.figure__reu figcaption{
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #EDF1FC;
+}
+.figure__reu figcaption{
+    padding: 4%;
+}
+.plumbing--flecha{
+    color: #1E60AA;
+    border: 2px solid white;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.plumbing--flecha:hover{
+    background-color:#1E60AA;
+    color: white;
+}
+/*aqui comienzan los estlos de la seccion about us*/
+.about__us{
+    display: flex;
+    justify-content: center;
+    color: #6C7176;
+}
+.about__us--container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:3.75rem;
+}
+.about__us .about__us h3{
+    margin-bottom: 2rem;
+}
+.about__us--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 40%;
+    min-width: 250px;
+    max-width: 740px;
+}
+.list{
+    color: #1E60AA;
+    font-weight: bold;
+    width: 90%;
+}
+.list--about{
+    margin:2rem 0 2rem 0 ;
+}
+.list li::before{
+    content: "✓";
+    color:#238C5B ;
+    margin-right: 5%;
+}
+.about__relative{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    max-height: 470px;
+    width: 50%;
+    min-width:300px;
+    max-width: 740px;
+    position: relative;
+}
+.img__absolute__1{
+    width: 75%;
+    max-height: 430px;
+    max-width: 615px;
+}
+.img__absolute__2{
+    border-right: 8px solid white;
+    border-top: 8px solid white;
+    width: 55%;
+    max-height: 230px;
+    max-width: 360px;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+}
+.emergency__number--about{
+    font-size: 2rem;
+}
+/*aqui comienzan los estlos de los articulos experience*/
+.experience{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../assets/img/bg.jpg);
+    display: flex;
+    justify-content: space-around;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    max-height: 250px;
+    margin: 0 0 6rem 0;
+}
+.experience div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-wrap: balance;
+    text-align: center;
+    font-weight: bold;
+    margin: 2.75rem 0 2.75rem 0;
+}
+.experience div p:nth-child(2){
+    margin: 10% 0 10% 0;
+}
+/*aqui comienzan los estlos de los articulos our services*/
+.our__services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #6C7176;
+}
+.years__experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1E60AA;
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+    width: 30%;
+    max-width: 480px;
+    min-width: 280px;
+}
+.explore__services{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.our__articles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.services__article {
+    padding: 1.25rem 0  1.25rem 0 ;
+    display: flex;
+    width: 30%;
+    min-width: 250px;
+    max-width: 420px;
+    background-color: #EDF1FC;
+    flex-direction: column;
+    align-items: center;
+}
+.texto__article{
+    width: 90%;
+}
+.texto__article p{
+    margin: 1.25rem 0 1.25rem 0;
+}
+.services__btn{
+    background-color: white;
+    color: #1E60AA;
+    font-weight: bold;
+    padding: 1%;
+    width: 90%;
+    max-width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.services__btn:hover{
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color:#1E60AA;
+    color: white;
+}
+.services--flecha{
+    color: #FF4917;
+}
+.our__services--icons{
+    margin-bottom: 1.25rem;
+    padding: 6px;
+    border: 4px solid white;
+    color:#1E60AA;
+    font-size: 2rem;
+    font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.change__services{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+.hidden {
+    display: none;
+  }
+.square{
+    background-color:#EDF1FC;
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    color: #1E60AA;
+    cursor: pointer;
+    font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.hidden:checked + .square {
+    background-color: #1E60AA;
+    color: #EDF1FC;
+  }
+.square:focus{
+    background-color:#1E60AA;
+    color: #EDF1FC;
+}
+/*aqui comienzan los estlos de la seccion form container*/
+.video__form{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../assets/img/carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+.video__form h2{
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+.play{
+    color: #1E60AA;
+    font-size: 4rem;
+    padding: 0.5rem;
+    border: 10px solid rgba(188, 190, 191, 1);
+    background-color: white;
+    border-radius: 50%;
+    font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.div__form{
+    background-color: #EDF1FC;
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__container .div__form h3{
+    margin: 2rem 0 1.5rem 0;
+}
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column; 
+}
+form *:not(div){
+    border: none;
+    padding: 2%;
+}
+form div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 2% 0 2% 0;
+    max-width: 660px;
+}
+form div input{
+    width: 49%;
+    min-width: 280px;
+}
+textarea{
+    margin-bottom: 2%;
+    max-width: 660px;
+}
+.input__btn{
+    cursor: pointer;
+    max-width: 660px;
+    margin-bottom: 5%;
+    color: white;
+    background-color: #1E60AA;
+}
+.input__btn:hover{
+    background-color: #2b8af7;
+}
+/*aqui comienzan los estlos de la seccion our technicians*/
+.our__technicians{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our__technicians h3{
+    text-align: center;
+}
+section.our__technicians-about{
+    margin-top: 6rem; 
+}
+.technicians__container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.figure__reu--technicians{
+    width: 22%;
+    min-width: 250px;
+    max-width: 360px;
+}
+.figure__reu--technicians figcaption{
+    display: flex;
+    flex-direction: column;
+    color: #6C7176;
+}
+/*aqui comienzan los estlos de la seccion testimonial*/
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6C7176;
+}
+.testimonial__container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial__article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    max-width: 515px;
+    min-width: 250px;
+    text-align: center;
+}
+.testimonial__article img{
+    max-width: 95px;
+    max-height: 75px;
+    border-radius: 50%;
+    border: 5px solid #EDF1FC;
+}
+.testimonial__client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #EDF1FC;
+    margin-bottom: 1px;
+}
+.testimonial__hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.triangle{
+    margin-bottom: 1rem;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #EDF1FC;
+    transform: rotate(180deg);
+}
+.testimonial__hover:hover .testimonial__client{
+    background-color: #1E60AA;
+    color: white;
+}
+.testimonial__hover:hover .triangle{
+    border-bottom: 15px solid #1E60AA;
+}
+.testimonial__client p{
+    margin: 5% 2% 5% 2%;
+}
+.star{
+    color: #FF4917;
+    font-size: 1.2rem;
+    font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/*aqui comienzan los estlos de la seccion del footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17224D;
+    color: white;
+}
+footer .info__footer h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.info__footer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info__footer div:not(.newsletter__btn){
+    min-width: 200px;
+    width: 25%;
+    margin:5% 0 5% 0 ;
+}
+.credits{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    border-top:1px solid rgb(255, 255, 255, 0.1);
+}
+.adress p, .opening p, .services p, .newsletter p{
+    margin-bottom: 0.7rem; 
+}
+.location::before{
+    content: url(../assets/img/location.png);
+    margin-right: 1rem;
+}
+.number::before{
+    content: url(../assets/img/phone.png);
+    margin-right: 1rem;
+}
+.email::before{
+    content: url(../assets/img/email.png);
+    margin-right: 1rem;
+}
+.opening__days{
+    font-weight: bold;
+}
+.services__list li::before{
+    content: "»";
+    margin-right: 1rem;
+}
+.newsletter__btn input[type="email"]{
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    width: 100%;
+}
+.newsletter input::placeholder{
+    opacity: 0.7;
+}
+.newsletter__btn{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.newsletter__btn input[type="submit"]{
+    position: absolute;
+    background-color: #1E60AA;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    right: 3%;
+    bottom: 20%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .header__contact{
+        display: flex;
+    }
+    .list--header{
+        display: flex;
+    }
+    .menu__hamburguesa{
+        display: none;
+    }
+    .emergency--header{
+        padding: 1%;
+    }
+    .header__arriba{
+        width: 90%;
+        padding: 1rem 0 1rem 0;
+    }
+    .header__nav{
+        display: flex;
+        width: 90%;
+    }
+     /*aqui comienzan los estlos de la seccion arriba desktop*/
+     .arriba__texto .header--pag{
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
+     .arriba__btn{
+        padding: 1rem 2.75rem 1rem 2.75rem;
+    }
+    .arriba__texto *{
+        margin: 0;
+    } 
+    .arriba__texto--home{
+        padding: 1.5rem 0 1.5rem 2.75rem;
+        width: 80%;
+        margin: 5rem 0 5rem 3rem;
+    }
+    .contenedor__btn{
+        margin-top: 2.75rem;
+    }
+    .arriba h2{
+        margin: 2.75rem 0 2.75rem 0;
+        font-size: 3.75rem;
+    }
+    .arriba span{
+        width: 80%;
+    }
+    section .arriba__texto--noHome{
+        padding: 1.5rem 0 1.5rem 2.75rem;
+    }
+    /*aqui comienzan los estlos de la seccion about us*/
+    .about__us--info{
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /*aqui comienzan los estlos del header desktop*/
+    .header__contact{
+        display: flex;
+    }
+    .list--header{
+        display: flex;
+    }
+    .menu__hamburguesa{
+        display: none;
+    }
+    .emergency--header{
+        padding: 1%;
+    }
+    .header__nav{
+        display: flex;
+    }
+    .header__arriba{
+        padding: 1rem 0 1rem 0;
+    }
+    /*aqui comienzan los estlos de la seccion arriba desktop*/
+    .arriba__texto .header--pag{
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
+    .arriba__btn{
+        padding: 1rem 2.75rem 1rem 2.75rem;
+    }
+    .arriba__texto *{
+        margin: 0;
+    } 
+    .arriba__texto--home{
+        padding: 1.5rem 0 1.5rem 2.75rem;
+        width: 45%;
+        margin: 15rem 0 15rem 10rem;
+    }
+    .contenedor__btn{
+        margin-top: 2.75rem;
+    }
+    .arriba h2{
+        margin: 2.75rem 0 2.75rem 0;
+        font-size: 3.75rem;
+    }
+    .arriba span{
+        width: 80%;
+    }
+    section .arriba__texto--noHome{
+        padding: 1.5rem 0 1.5rem 2.75rem;
+    }
+    /*aqui comienzan los estlos de la seccion plumbing*/
+
+
+    /*aqui comienzan los estlos de la seccion about us*/
+   
+    /*aqui comienzan los estlos de los articulos experience*/
+    .experience p:first-of-type{
+        font-size: 2rem;
+    }
+    .material-symbols-outlined--experience{
+        font-size: 2rem;
+    }
+    /*aqui comienzan los estlos de los articulos our services*/
+    .years__experience{
+        margin: 0;
+        height: 35rem;
+        font-size: 5rem;
+    }
+    .years__experience p{
+        transform: rotate(-90deg);
+    }
+    .our__services{
+        justify-content: space-between;
+    }
+    .our__articles{
+        justify-content: flex-start;
+    }
+    /*aqui comienzan los estlos de la seccion form container*/
+    .video__form{
+        padding: 10% 0 10% 0;
+    }
+    .div__form{
+        position: absolute;
+        bottom: -70%;
+    }
+    /*aqui comienzan los estlos de la seccion our technicians*/
+    .our__technicians{
+        margin-top: 20rem;
+    }
+    .technicians__container{
+        justify-content: space-between;
+    }
+    .our__technicians{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .technicians__container{
+        width: 90%;
+    }
+    .figure__reu--technicians{
+        width: 22%;
+        min-width: 210px;
+    }
+    /*aqui comienzan los estlos de la seccion testimonial*/
+    section.testimonial--margin{
+        margin-top: 20rem;
+    }    
+    /*aqui comienzan los estlos de la seccion del footer*/
+    
+    .booking__footer{
+        margin-top: 20rem;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .our__articles{
+        justify-content: space-between;
+    }
+    .our__services{
+        justify-content: space-between;
+    }
+    .header__contact{
+        display: flex;
+    }
+    .list--header{
+        display: flex;
+    }
+    .menu__hamburguesa{
+        display: none;
+    }
+    .emergency--header{
+        padding: 1%;
+    }
+    .header__arriba{
+        padding: 1rem 0 1rem 0;
+    }
+    .header__nav{
+        display: flex;
+    }
+    /*aqui comienzan los estlos de la seccion arriba desktop*/
+    .arriba__texto .header--pag{
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+    }
+    .arriba__btn{
+        padding: 1rem 2.75rem 1rem 2.75rem;
+    }
+    .arriba__texto *{
+        margin: 0;
+    } 
+    .arriba__texto--home{
+        padding: 1.5rem 0 1.5rem 2.75rem;
+        width: 45%;
+        margin: 15rem 0 15rem 10rem;
+    }
+    .contenedor__btn{
+        margin-top: 2.75rem;
+    }
+    .arriba h2{
+        margin: 2.75rem 0 2.75rem 0;
+        font-size: 3.75rem;
+    }
+    .arriba span{
+        width: 80%;
+    }
+    section .arriba__texto--noHome{
+        padding: 1.5rem 0 1.5rem 2.75rem;
+    }
+    /*aqui comienzan los estlos de la seccion plumbing*/
+
+
+    /*aqui comienzan los estlos de la seccion about us*/
+   
+    /*aqui comienzan los estlos de los articulos experience*/
+    .experience p:first-of-type{
+        font-size: 2rem;
+    }
+    .material-symbols-outlined--experience{
+        font-size: 2rem;
+    }
+    /*aqui comienzan los estlos de los articulos our services*/
+    .years__experience{
+        margin: 0;
+        height: 35rem;
+        font-size: 5rem;
+    }
+    .years__experience p{
+        transform: rotate(-90deg);
+    }
+    .our__services{
+        justify-content: space-between;
+    }
+    .our__articles{
+        justify-content: flex-start;
+    }
+    /*aqui comienzan los estlos de la seccion form container*/
+    .video__form{
+        padding: 10% 0 10% 0;
+    }
+    .div__form{
+        position: absolute;
+        bottom: -30%; 
+        transform: translate(0%, 20%);
+    }
+    /*aqui comienzan los estlos de la seccion our technicians*/
+    .our__technicians{
+        margin-top: 20rem;
+    }
+    .technicians__container{
+        justify-content: space-between;
+    }
+    .our__technicians{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .technicians__container{
+        width: 90%;
+    }
+    .figure__reu--technicians{
+        width: 22%;
+        min-width: 210px;
+    }
+    /*aqui comienzan los estlos de la seccion testimonial*/
+    section.testimonial--margin{
+        margin-top: 20rem;
+    }    
+    /*aqui comienzan los estlos de la seccion del footer*/
+    .booking__footer{
+        margin-top: 20rem;
+    }
+}
